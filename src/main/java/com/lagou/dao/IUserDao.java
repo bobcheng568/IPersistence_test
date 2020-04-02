@@ -14,4 +14,11 @@ public interface IUserDao {
     public User findByCondition(User user) throws Exception;
 
 
+    int insert(User user);
+
+    int updateById(User user);
+
+    int deleteById(Integer id);
+
+
 }

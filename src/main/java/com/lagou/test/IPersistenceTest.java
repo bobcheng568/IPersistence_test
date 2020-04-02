@@ -34,11 +34,17 @@ public class IPersistenceTest {
 
         IUserDao userDao = sqlSession.getMapper(IUserDao.class);
 
-        List<User> all = userDao.findAll();
-        for (User user1 : all) {
-            System.out.println(user1);
-        }
+//        List<User> all = userDao.findAll();
+//        for (User user1 : all) {
+//            System.out.println(user1);
+//        }
 
+        int i = userDao.insert(User.builder().id(2).username("李四").build());
+        System.out.println(i);
+
+//        userDao.updateById(User.builder().id(2).username("lisi").build());
+
+//        userDao.deleteById(2);
 
     }
 
