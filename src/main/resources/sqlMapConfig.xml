@@ -1,0 +1,17 @@
+<configuration>
+
+        <!--数据库配置信息-->
+    <dataSource>
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="jdbcUrl" value="jdbc:mysql:///lagou_test"></property>
+        <!--<property name="jdbcUrl" value="jdbc:mysql://rm-8vb755cmm817lp78jgo.mysql.zhangbei.rds.aliyuncs.com:3306/lagou_test"></property>-->
+        <property name="username" value="root"></property>
+        <!--<property name="username" value="baojun"></property>-->
+        <property name="password" value="root"></property>
+        <!--<property name="password" value="@QAZ456edc"></property>-->
+    </dataSource>
+
+    <!--存放mapper.xml的全路径-->
+    <mapper resource="UserMapper.xml"></mapper>
+
+</configuration>
